@@ -1,0 +1,30 @@
+<div class="debug-card">
+    <form class="debug-form">
+        <label for="endpoint">Endpoint:</label>
+        <input type="text" id="endpoint" name="endpoint" value="/people" />
+        <button data-action="read">Get Data</button>
+        <button data-action="clear">Clear</button>
+    </form>
+    <pre>
+        <code>
+            {{ request_content }}
+        </code>
+    </pre>
+</div>
+
+<style>
+    div.debug-card {
+        border: black 2px solid;
+        border-radius: 5px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        font-size: 1.2em;
+    }
+</style>
+
